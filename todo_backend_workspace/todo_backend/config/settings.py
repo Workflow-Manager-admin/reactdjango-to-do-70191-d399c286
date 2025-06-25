@@ -130,4 +130,22 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS configuration
+CORS_ALLOW_ALL_ORIGINS = True  # Allow all origins during development.
+CORS_ALLOW_CREDENTIALS = True  # Allow cookies/auth headers; set to False if not needed.
+
+# In production, you should specify allowed origins:
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",  # React frontend dev server
+#     "https://your-production-frontend-domain.tld",
+# ]
+
+# Django REST Framework global settings (optional fine-tuning)
+REST_FRAMEWORK = {
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.AllowAny',
+    # ],
+    # 'DEFAULT_RENDERER_CLASSES': [
+    #     'rest_framework.renderers.JSONRenderer',
+    # ],
+}

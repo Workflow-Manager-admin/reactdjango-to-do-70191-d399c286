@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npx tsc --noEmit && npm test -- --ci",
+    "working_directory": "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_frontend_workspace/todo_frontend"
+}

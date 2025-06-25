@@ -1,0 +1,7 @@
+# This file documents that the migration for the Task model must be applied.
+# In practice, run:
+# python manage.py makemigrations api
+# python manage.py migrate
+# (Makemigrations step is reflected in 0001_initial.py above.)
+
+# This placeholder file serves as a record for this step in the automated workflow.

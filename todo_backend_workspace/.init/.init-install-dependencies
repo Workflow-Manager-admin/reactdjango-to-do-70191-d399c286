@@ -1,0 +1,4 @@
+{
+    "command": "source venv/bin/activate && pip install -r requirements.txt",
+    "working_directory": "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend"
+}

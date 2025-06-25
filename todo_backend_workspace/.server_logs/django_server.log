@@ -1,48 +1,15 @@
-Operations to perform:
-  Apply all migrations: admin, auth, contenttypes, sessions
-Running migrations:
-  Applying contenttypes.0001_initial... OK
-  Applying auth.0001_initial... OK
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying contenttypes.0002_remove_content_type_name... OK
-  Applying auth.0002_alter_permission_name_max_length... OK
-  Applying auth.0003_alter_user_email_max_length... OK
-  Applying auth.0004_alter_user_username_opts... OK
-  Applying auth.0005_alter_user_last_login_null... OK
-  Applying auth.0006_require_contenttypes_0002... OK
-  Applying auth.0007_alter_validators_add_error_messages... OK
-  Applying auth.0008_alter_user_username_max_length... OK
-  Applying auth.0009_alter_user_last_name_max_length... OK
-  Applying auth.0010_alter_group_name_max_length... OK
-  Applying auth.0011_update_proxy_permissions... OK
-  Applying auth.0012_alter_user_first_name_max_length... OK
-  Applying sessions.0001_initial... OK
-Watching for file changes with StatReloader
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 25, 2025 - 05:07:12
-Django version 5.2, using settings 'config.settings'
-Starting development server at http://0.0.0.0:3001/
-Quit the server with CONTROL-C.
-
-WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
-For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
-/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/api/views.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
-
-Exception in thread django-main-thread:
 Traceback (most recent call last):
-  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.12/threading.py", line 1010, in run
-    self._target(*self._args, **self._kwargs)
-  File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
-    fn(*args, **kwargs)
-  File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+  File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/manage.py", line 22, in <module>
+    main()
+  File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/venv/lib/python3.12/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/venv/lib/python3.12/site-packages/django/core/management/__init__.py", line 436, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/venv/lib/python3.12/site-packages/django/core/management/base.py", line 416, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/venv/lib/python3.12/site-packages/django/core/management/base.py", line 457, in execute
     self.check(**check_kwargs)
   File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/venv/lib/python3.12/site-packages/django/core/management/base.py", line 492, in check
     all_issues = checks.run_checks(
@@ -87,7 +54,7 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
   File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/api/urls.py", line 2, in <module>
-    from .views import health
+    from .views import health, tasks_list_create, task_delete
   File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/api/views.py", line 4, in <module>
     from .models import Task
   File "/home/kavia/workspace/code-generation/reactdjango-to-do-70191-d399c286/todo_backend_workspace/todo_backend/api/models.py", line 5, in <module>

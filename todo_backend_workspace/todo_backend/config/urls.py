@@ -26,13 +26,13 @@ urlpatterns = [
 ]
 
 schema_view = get_schema_view(
-   openapi.Info(
-      title="My API",
-      default_version='v1',
-      description="Test description",
-   ),
-   public=True,
-   permission_classes=(permissions.AllowAny,),
+    openapi.Info(
+        title="My API",
+        default_version='v1',
+        description="Test description",
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
 )
 
 urlpatterns += [
@@ -47,7 +47,7 @@ urlpatterns += [
         name='schema-redoc',
     ),
     re_path(
-        r'^swagger\.json$',
+        r'^swagger\\.json$',
         schema_view.without_ui(cache_timeout=0),
         name='schema-json',
     ),
